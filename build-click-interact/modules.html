@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Learning Modules - Build, Click, Interact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-laptop-code"></i>
+                <span>BCI</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="modules.html" class="nav-link active">Learn</a></li>
+                <li><a href="simulations.html" class="nav-link active">Simulations</a></li>
+                <li><a href="quiz.html" class="nav-link">Quiz</a></li>
+                <li><a href="tools.html" class="nav-link">Tools</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="#simulations" class="nav-get-started btn btn-primary btn-pill">Get Started</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modules Page Content -->
+    <main class="modules-page">
+        <div class="container">
+            <!-- Progress Tracker -->
+            <div class="progress-tracker fade-in">
+                <h2>Your Learning Progress</h2>
+                <p>0 of 4 modules completed</p>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+
+            <!-- Page Title -->
+            <div class="page-header fade-in">
+                <h1 class="section-title">UX Learning Modules</h1>
+                <p class="page-subtitle">Choose a topic and start your interactive learning journey</p>
+            </div>
+
+            <!-- Modules Grid -->
+            <div class="modules-grid" id="simulations">
+                <!-- Usability Module -->
+                <div class="module-card fade-in" data-module="usability">
+                    <div class="module-icon-square">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3 class="module-title">Usability</h3>
+                    <p>Learn how to evaluate interfaces for ease of use and create designs that users can navigate intuitively.</p>
+                    <span class="difficulty beginner">Beginner</span>
+                    <a href="simulations/usability.html" class="btn btn-primary">Start Module</a>
+                </div>
+
+                <!-- Accessibility Module -->
+                <div class="module-card fade-in" data-module="accessibility">
+                    <div class="module-icon-square">
+                        <i class="fas fa-universal-access"></i>
+                    </div>
+                    <h3 class="module-title">Accessibility</h3>
+                    <p>Discover how to design for all users including those with disabilities and create inclusive experiences.</p>
+                    <span class="difficulty beginner">Beginner</span>
+                    <a href="simulations/accessibility.html" class="btn btn-primary">Start Module</a>
+                </div>
+
+                <!-- User-Centered Design Module -->
+                <div class="module-card fade-in" data-module="user-centered">
+                    <div class="module-icon-square">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3 class="module-title">User-Centered Design</h3>
+                    <p>Put the user first in every design decision and create products that truly meet user needs.</p>
+                    <span class="difficulty intermediate">Intermediate</span>
+                    <a href="simulations/user-centered.html" class="btn btn-primary">Start Module</a>
+                </div>
+
+                <!-- Interactivity & Feedback Module -->
+                <div class="module-card fade-in" data-module="interactivity">
+                    <div class="module-icon-square">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3 class="module-title">Interactivity & Feedback</h3>
+                    <p>Learn how feedback loops improve user experience and create engaging interactive interfaces.</p>
+                    <span class="difficulty intermediate">Intermediate</span>
+                    <a href="simulations/interactivity.html" class="btn btn-primary">Start Module</a>
+                </div>
+            </div>
+
+            <!-- Learning Tips -->
+            <div class="learning-tips fade-in">
+                <h2>Tips for Success</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Take Your Time</h3>
+                        <p>Each module is designed to be completed at your own pace. There's no time limit!</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Learn from Mistakes</h3>
+                        <p>Wrong answers are opportunities to learn. Read the explanations carefully.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Apply What You Learn</h3>
+                        <p>Try applying these principles in your own design projects after completing the modules.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="index.html" class="footer-logo">
+                <i class="fas fa-mouse-pointer"></i>
+                <span>Build, Click, Interact</span>
+            </a>
+            <div class="footer-copyright">
+                <p>&copy; 2026 Build, Click, Interact. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

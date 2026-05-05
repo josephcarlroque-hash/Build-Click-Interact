@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Design - Build, Click, Interact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="nav-logo">
+                <i class="fas fa-laptop-code"></i>
+                <span>BCI</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../modules.html" class="nav-link">Learn</a></li>
+                <li><a href="../modules.html" class="nav-link active">Simulations</a></li>
+                <li><a href="../quiz.html" class="nav-link">Quiz</a></li>
+                <li><a href="../tools.html" class="nav-link">Tools</a></li>
+                <li><a href="../about.html" class="nav-link">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="simulation-page">
+        <div class="container">
+            <div class="simulation-header">
+                <h1>Navigation Design</h1>
+                <div class="step-indicator">Step 7 of 8</div>
+            </div>
+
+            <!-- ACTIVITY 1 — Navigation Pattern Identifier -->
+            <section class="activity-section">
+                <h2><i class="fas fa-compass"></i> Navigation Pattern Identifier</h2>
+                <p>Identify each navigation pattern by selecting the correct type:</p>
+                
+                <div class="nav-patterns-grid">
+                    <div class="nav-pattern-item">
+                        <div class="nav-example top-navbar">
+                            <div class="nav-brand">Logo</div>
+                            <div class="nav-links">
+                                <a href="#">Home</a>
+                                <a href="#">About</a>
+                                <a href="#">Contact</a>
+                            </div>
+                        </div>
+                        <select class="pattern-select" data-pattern="1">
+                            <option value="">Select pattern...</option>
+                            <option value="top-navbar">Top Navbar</option>
+                            <option value="sidebar">Sidebar</option>
+                            <option value="bottom-tabs">Bottom Tabs</option>
+                            <option value="hamburger">Hamburger Menu</option>
+                            <option value="breadcrumb">Breadcrumb</option>
+                        </select>
+                        <div class="pattern-feedback" data-pattern="1"></div>
+                    </div>
+
+                    <div class="nav-pattern-item">
+                        <div class="nav-example sidebar-nav">
+                            <div class="sidebar-content">
+                                <div class="sidebar-brand">Menu</div>
+                                <div class="sidebar-links">
+                                    <a href="#">Dashboard</a>
+                                    <a href="#">Settings</a>
+                                    <a href="#">Profile</a>
+                                </div>
+                            </div>
+                        </div>
+                        <select class="pattern-select" data-pattern="2">
+                            <option value="">Select pattern...</option>
+                            <option value="top-navbar">Top Navbar</option>
+                            <option value="sidebar">Sidebar</option>
+                            <option value="bottom-tabs">Bottom Tabs</option>
+                            <option value="hamburger">Hamburger Menu</option>
+                            <option value="breadcrumb">Breadcrumb</option>
+                        </select>
+                        <div class="pattern-feedback" data-pattern="2"></div>
+                    </div>
+
+                    <div class="nav-pattern-item">
+                        <div class="nav-example bottom-tabs">
+                            <div class="tab-bar">
+                                <a href="#" class="tab active"><i class="fas fa-home"></i></a>
+                                <a href="#" class="tab"><i class="fas fa-search"></i></a>
+                                <a href="#" class="tab"><i class="fas fa-plus"></i></a>
+                                <a href="#" class="tab"><i class="fas fa-user"></i></a>
+                            </div>
+                        </div>
+                        <select class="pattern-select" data-pattern="3">
+                            <option value="">Select pattern...</option>
+                            <option value="top-navbar">Top Navbar</option>
+                            <option value="sidebar">Sidebar</option>
+                            <option value="bottom-tabs">Bottom Tabs</option>
+                            <option value="hamburger">Hamburger Menu</option>
+                            <option value="breadcrumb">Breadcrumb</option>
+                        </select>
+                        <div class="pattern-feedback" data-pattern="3"></div>
+                    </div>
+
+                    <div class="nav-pattern-item">
+                        <div class="nav-example hamburger-menu">
+                            <div class="hamburger-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <select class="pattern-select" data-pattern="4">
+                            <option value="">Select pattern...</option>
+                            <option value="top-navbar">Top Navbar</option>
+                            <option value="sidebar">Sidebar</option>
+                            <option value="bottom-tabs">Bottom Tabs</option>
+                            <option value="hamburger">Hamburger Menu</option>
+                            <option value="breadcrumb">Breadcrumb</option>
+                        </select>
+                        <div class="pattern-feedback" data-pattern="4"></div>
+                    </div>
+
+                    <div class="nav-pattern-item">
+                        <div class="nav-example breadcrumb-nav">
+                            <div class="breadcrumb">
+                                <a href="#">Home</a>
+                                <span class="separator">></span>
+                                <a href="#">Category</a>
+                                <span class="separator">></span>
+                                <span class="current">Page</span>
+                            </div>
+                        </div>
+                        <select class="pattern-select" data-pattern="5">
+                            <option value="">Select pattern...</option>
+                            <option value="top-navbar">Top Navbar</option>
+                            <option value="sidebar">Sidebar</option>
+                            <option value="bottom-tabs">Bottom Tabs</option>
+                            <option value="hamburger">Hamburger Menu</option>
+                            <option value="breadcrumb">Breadcrumb</option>
+                        </select>
+                        <div class="pattern-feedback" data-pattern="5"></div>
+                    </div>
+                </div>
+
+                <div id="pattern-score" class="score-display" style="display: none;">
+                    <h3>Pattern Identification Score: <span id="pattern-score-value">0</span>/5</h3>
+                    <div class="pattern-usage">
+                        <h4>When to use each pattern:</h4>
+                        <ul>
+                            <li><strong>Top Navbar:</strong> Best for desktop sites with 5-7 main sections</li>
+                            <li><strong>Sidebar:</strong> Great for dashboards and complex applications</li>
+                            <li><strong>Bottom Tabs:</strong> Perfect for mobile apps with 3-5 main areas</li>
+                            <li><strong>Hamburger Menu:</strong> Use when screen space is limited</li>
+                            <li><strong>Breadcrumb:</strong> Shows user's location in deep hierarchies</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ACTIVITY 2 — Information Architecture Sort -->
+            <section class="activity-section">
+                <h2><i class="fas fa-sitemap"></i> Information Architecture Sort</h2>
+                <p>Drag each item to the correct category:</p>
+                
+                <div class="ia-sort-game">
+                    <div class="draggable-items">
+                        <div class="draggable-label" draggable="true" data-item="faq">FAQ</div>
+                        <div class="draggable-label" draggable="true" data-item="story">Our Story</div>
+                        <div class="draggable-label" draggable="true" data-item="pricing">Pricing</div>
+                        <div class="draggable-label" draggable="true" data-item="login">Login</div>
+                        <div class="draggable-label" draggable="true" data-item="contact">Contact Us</div>
+                        <div class="draggable-label" draggable="true" data-item="features">Features</div>
+                        <div class="draggable-label" draggable="true" data-item="team">Team</div>
+                        <div class="draggable-label" draggable="true" data-item="orders">My Orders</div>
+                        <div class="draggable-label" draggable="true" data-item="help">Help Center</div>
+                        <div class="draggable-label" draggable="true" data-item="plans">Plans</div>
+                        <div class="draggable-label" draggable="true" data-item="careers">Careers</div>
+                        <div class="draggable-label" draggable="true" data-item="settings">Settings</div>
+                    </div>
+                    
+                    <div class="drop-buckets">
+                        <div class="bucket" data-category="products">
+                            <h4>Products</h4>
+                            <div class="bucket-content"></div>
+                        </div>
+                        <div class="bucket" data-category="about">
+                            <h4>About</h4>
+                            <div class="bucket-content"></div>
+                        </div>
+                        <div class="bucket" data-category="support">
+                            <h4>Support</h4>
+                            <div class="bucket-content"></div>
+                        </div>
+                        <div class="bucket" data-category="account">
+                            <h4>Account</h4>
+                            <div class="bucket-content"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="ia-feedback" class="feedback-message" style="display: none;"></div>
+            </section>
+
+            <!-- ACTIVITY 3 — Breadcrumb Builder -->
+            <section class="activity-section">
+                <h2><i class="fas fa-route"></i> Breadcrumb Builder</h2>
+                <p>A user is on the Checkout page of an electronics store inside the Laptops category.</p>
+                <p>Arrange the items in the correct navigation order:</p>
+                
+                <div class="breadcrumb-builder">
+                    <div class="breadcrumb-items" id="breadcrumb-items">
+                        <div class="breadcrumb-item" draggable="true" data-item="home">Home</div>
+                        <div class="breadcrumb-item" draggable="true" data-item="electronics">Electronics</div>
+                        <div class="breadcrumb-item" draggable="true" data-item="laptops">Laptops</div>
+                        <div class="breadcrumb-item" draggable="true" data-item="checkout">Checkout</div>
+                    </div>
+                    
+                    <div class="breadcrumb-result">
+                        <h4>Your Breadcrumb:</h4>
+                        <div class="breadcrumb-display" id="breadcrumb-display">
+                            <span class="empty">Drag items here to build breadcrumb</span>
+                        </div>
+                        <button class="btn btn-primary" id="check-breadcrumb">Check Answer</button>
+                    </div>
+                </div>
+
+                <div id="breadcrumb-feedback" class="feedback-message" style="display: none;"></div>
+            </section>
+
+            <div class="navigation-buttons">
+                <a href="mental-models.html" class="btn btn-primary" id="next-btn" style="display: none;">Next: Mental Models</a>
+                <a href="../modules.html" class="btn btn-secondary">Back to Modules</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Build, Click, Interact — An Interactive UX Learning Platform</p>
+            <p>&copy; 2026</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/progress.js"></script>
+    <script>
+        // Navigation Pattern Identifier Logic
+        const correctPatterns = {
+            1: 'top-navbar',
+            2: 'sidebar',
+            3: 'bottom-tabs',
+            4: 'hamburger',
+            5: 'breadcrumb'
+        };
+
+        let patternScore = 0;
+        let patternsCompleted = 0;
+
+        document.querySelectorAll('.pattern-select').forEach(select => {
+            select.addEventListener('change', function() {
+                const patternNum = parseInt(this.dataset.pattern);
+                const selectedValue = this.value;
+                const feedbackDiv = document.querySelector(`.pattern-feedback[data-pattern="${patternNum}"]`);
+                
+                if (selectedValue === correctPatterns[patternNum]) {
+                    feedbackDiv.innerHTML = '<i class="fas fa-check"></i> Correct!';
+                    feedbackDiv.className = 'pattern-feedback correct';
+                    patternScore++;
+                } else {
+                    feedbackDiv.innerHTML = '<i class="fas fa-times"></i> Try again';
+                    feedbackDiv.className = 'pattern-feedback incorrect';
+                }
+                
+                patternsCompleted++;
+                this.disabled = true;
+                
+                if (patternsCompleted === 5) {
+                    document.getElementById('pattern-score-value').textContent = patternScore;
+                    document.getElementById('pattern-score').style.display = 'block';
+                }
+            });
+        });
+
+        // Information Architecture Sort Logic
+        const correctCategories = {
+            'faq': 'support',
+            'story': 'about',
+            'pricing': 'products',
+            'login': 'account',
+            'contact': 'support',
+            'features': 'products',
+            'team': 'about',
+            'orders': 'account',
+            'help': 'support',
+            'plans': 'products',
+            'careers': 'about',
+            'settings': 'account'
+        };
+
+        let iaDraggedElement = null;
+
+        document.querySelectorAll('.draggable-label').forEach(label => {
+            label.addEventListener('dragstart', function(e) {
+                iaDraggedElement = this;
+                this.style.opacity = '0.5';
+            });
+
+            label.addEventListener('dragend', function(e) {
+                this.style.opacity = '';
+            });
+        });
+
+        document.querySelectorAll('.bucket').forEach(bucket => {
+            bucket.addEventListener('dragover', function(e) {
+                e.preventDefault();
+                this.classList.add('bucket-hover');
+            });
+
+            bucket.addEventListener('dragleave', function(e) {
+                this.classList.remove('bucket-hover');
+            });
+
+            bucket.addEventListener('drop', function(e) {
+                e.preventDefault();
+                this.classList.remove('bucket-hover');
+                
+                if (iaDraggedElement) {
+                    const item = iaDraggedElement.dataset.item;
+                    const category = this.dataset.category;
+                    const bucketContent = this.querySelector('.bucket-content');
+                    const feedback = document.getElementById('ia-feedback');
+                    
+                    if (correctCategories[item] === category) {
+                        bucketContent.appendChild(iaDraggedElement);
+                        iaDraggedElement.classList.add('correct-placement');
+                        feedback.textContent = 'Correct placement!';
+                        feedback.className = 'feedback-message success';
+                    } else {
+                        feedback.textContent = 'This item belongs in a different category.';
+                        feedback.className = 'feedback-message error';
+                    }
+                    
+                    feedback.style.display = 'block';
+                    setTimeout(() => {
+                        feedback.style.display = 'none';
+                    }, 2000);
+                }
+            });
+        });
+
+        // Breadcrumb Builder Logic
+        const breadcrumbItems = document.getElementById('breadcrumb-items');
+        const breadcrumbDisplay = document.getElementById('breadcrumb-display');
+        let breadcrumbDraggedElement = null;
+
+        document.querySelectorAll('.breadcrumb-item').forEach(item => {
+            item.addEventListener('dragstart', function(e) {
+                breadcrumbDraggedElement = this;
+                this.style.opacity = '0.5';
+            });
+
+            item.addEventListener('dragend', function(e) {
+                this.style.opacity = '';
+            });
+        });
+
+        breadcrumbDisplay.addEventListener('dragover', function(e) {
+            e.preventDefault();
+            this.classList.add('drag-over');
+        });
+
+        breadcrumbDisplay.addEventListener('dragleave', function(e) {
+            this.classList.remove('drag-over');
+        });
+
+        breadcrumbDisplay.addEventListener('drop', function(e) {
+            e.preventDefault();
+            this.classList.remove('drag-over');
+            
+            if (breadcrumbDraggedElement) {
+                if (this.querySelector('.empty')) {
+                    this.innerHTML = '';
+                }
+                this.appendChild(breadcrumbDraggedElement);
+                breadcrumbDraggedElement.classList.add('in-breadcrumb');
+            }
+        });
+
+        document.getElementById('check-breadcrumb').addEventListener('click', function() {
+            const items = breadcrumbDisplay.querySelectorAll('.breadcrumb-item');
+            const order = Array.from(items).map(item => item.dataset.item);
+            const correctOrder = ['home', 'electronics', 'laptops', 'checkout'];
+            const feedback = document.getElementById('breadcrumb-feedback');
+            
+            if (JSON.stringify(order) === JSON.stringify(correctOrder)) {
+                feedback.textContent = 'Perfect! Home > Electronics > Laptops > Checkout is the correct breadcrumb structure.';
+                feedback.className = 'feedback-message success';
+            } else {
+                feedback.textContent = 'Not quite right. Remember: Start broad (Home) and get more specific (Checkout).';
+                feedback.className = 'feedback-message error';
+            }
+            
+            feedback.style.display = 'block';
+        });
+
+        // Check if all activities are completed
+        let activitiesCompleted = {
+            patterns: false,
+            iaSort: false,
+            breadcrumb: false
+        };
+
+        // Mark activities as completed
+        const checkPatternComplete = setInterval(() => {
+            if (patternsCompleted === 5) {
+                activitiesCompleted.patterns = true;
+                clearInterval(checkPatternComplete);
+                checkAllActivitiesCompleted();
+            }
+        }, 1000);
+
+        document.querySelectorAll('.bucket').forEach(bucket => {
+            bucket.addEventListener('drop', function() {
+                activitiesCompleted.iaSort = true;
+                checkAllActivitiesCompleted();
+            });
+        });
+
+        document.getElementById('check-breadcrumb').addEventListener('click', function() {
+            activitiesCompleted.breadcrumb = true;
+            checkAllActivitiesCompleted();
+        });
+
+        function checkAllActivitiesCompleted() {
+            if (activitiesCompleted.patterns && activitiesCompleted.iaSort && activitiesCompleted.breadcrumb) {
+                localStorage.setItem('module_navigation_complete', 'true');
+                document.getElementById('next-btn').style.display = 'inline-block';
+            }
+        }
+    </script>
+</body>
+</html>

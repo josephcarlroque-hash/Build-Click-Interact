@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Simulations - Build, Click, Interact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-laptop-code"></i>
+                <span>BCI</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="modules.html" class="nav-link">Learn</a></li>
+                <li><a href="simulations.html" class="nav-link active">Simulations</a></li>
+                <li><a href="quiz.html" class="nav-link">Quiz</a></li>
+                <li><a href="tools.html" class="nav-link">Tools</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="modules.html" class="nav-get-started btn btn-primary btn-pill">Get Started</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <main class="simulations-page">
+        <div class="container">
+            <div class="page-header fade-in">
+                <h1 class="section-title">All Simulations</h1>
+                <p class="page-subtitle">Choose a simulation and start your interactive learning journey</p>
+            </div>
+
+            <!-- Simulations Grid -->
+            <div class="simulations-grid">
+                <!-- Usability Simulation -->
+                <div class="simulation-card fade-in" data-difficulty="beginner">
+                    <div class="card-top-bar blue"></div>
+                    <div class="card-content">
+                        <div class="simulation-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h3 class="simulation-title">Usability Testing</h3>
+                        <p class="simulation-description">Learn how to evaluate interfaces for ease of use and create designs that users can navigate intuitively.</p>
+                        <div class="simulation-meta">
+                            <span class="difficulty-badge beginner">Beginner</span>
+                            <span class="duration-badge">15 min</span>
+                        </div>
+                        <a href="simulations/usability.html" class="btn btn-primary">Start Simulation</a>
+                    </div>
+                </div>
+
+                <!-- Accessibility Simulation -->
+                <div class="simulation-card fade-in" data-difficulty="beginner">
+                    <div class="card-top-bar purple"></div>
+                    <div class="card-content">
+                        <div class="simulation-icon">
+                            <i class="fas fa-universal-access"></i>
+                        </div>
+                        <h3 class="simulation-title">Accessibility</h3>
+                        <p class="simulation-description">Discover how to design for all users including those with disabilities and create inclusive experiences.</p>
+                        <div class="simulation-meta">
+                            <span class="difficulty-badge beginner">Beginner</span>
+                            <span class="duration-badge">20 min</span>
+                        </div>
+                        <a href="simulations/accessibility.html" class="btn btn-primary">Start Simulation</a>
+                    </div>
+                </div>
+
+                <!-- User-Centered Design Simulation -->
+                <div class="simulation-card fade-in" data-difficulty="intermediate">
+                    <div class="card-top-bar green"></div>
+                    <div class="card-content">
+                        <div class="simulation-icon">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h3 class="simulation-title">User-Centered Design</h3>
+                        <p class="simulation-description">Put the user first in every design decision and create products that truly meet user needs.</p>
+                        <div class="simulation-meta">
+                            <span class="difficulty-badge intermediate">Intermediate</span>
+                            <span class="duration-badge">25 min</span>
+                        </div>
+                        <a href="simulations/user-centered.html" class="btn btn-primary">Start Simulation</a>
+                    </div>
+                </div>
+
+                <!-- Interactivity Simulation -->
+                <div class="simulation-card fade-in" data-difficulty="intermediate">
+                    <div class="card-top-bar orange"></div>
+                    <div class="card-content">
+                        <div class="simulation-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h3 class="simulation-title">Interactivity & Feedback</h3>
+                        <p class="simulation-description">Learn how feedback loops improve user experience and create engaging interactive interfaces.</p>
+                        <div class="simulation-meta">
+                            <span class="difficulty-badge intermediate">Intermediate</span>
+                            <span class="duration-badge">18 min</span>
+                        </div>
+                        <a href="simulations/interactivity.html" class="btn btn-primary">Start Simulation</a>
+                    </div>
+                </div>
+
+                <!-- Fitts' Law Simulation -->
+                <div class="simulation-card fade-in" data-difficulty="intermediate">
+                    <div class="card-top-bar red"></div>
+                    <div class="card-content">
+                        <div class="simulation-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 class="simulation-title">Fitts' Law</h3>
+                        <p class="simulation-description">Experience how target size and distance affect interaction speed through hands-on clicking exercises.</p>
+                        <div class="simulation-meta">
+                            <span class="difficulty-badge intermediate">Intermediate</span>
+                            <span class="duration-badge">12 min</span>
+                        </div>
+                        <a href="simulations/fitts-law.html" class="btn btn-primary">Start Simulation</a>
+                    </div>
+                </div>
+
+                <!-- Color Theory Simulation -->
+                <div class="simulation-card fade-in" data-difficulty="beginner">
+                    <div class="card-top-bar pink"></div>
+                    <div class="card-content">
+                        <div class="simulation-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="simulation-title">Color Theory</h3>
+                        <p class="simulation-description">Master color psychology, contrast ratios, and create accessible color palettes for better user experience.</p>
+                        <div class="simulation-meta">
+                            <span class="difficulty-badge beginner">Beginner</span>
+                            <span class="duration-badge">22 min</span>
+                        </div>
+                        <a href="simulations/color-theory.html" class="btn btn-primary">Start Simulation</a>
+                    </div>
+                </div>
+
+                <!-- Navigation Design Simulation -->
+                <div class="simulation-card fade-in" data-difficulty="intermediate">
+                    <div class="card-top-bar indigo"></div>
+                    <div class="card-content">
+                        <div class="simulation-icon">
+                            <i class="fas fa-compass"></i>
+                        </div>
+                        <h3 class="simulation-title">Navigation Design</h3>
+                        <p class="simulation-description">Design intuitive navigation patterns and information architecture that users can navigate effortlessly.</p>
+                        <div class="simulation-meta">
+                            <span class="difficulty-badge intermediate">Intermediate</span>
+                            <span class="duration-badge">20 min</span>
+                        </div>
+                        <a href="simulations/navigation.html" class="btn btn-primary">Start Simulation</a>
+                    </div>
+                </div>
+
+                <!-- Mental Models Simulation -->
+                <div class="simulation-card fade-in" data-difficulty="advanced">
+                    <div class="card-top-bar yellow"></div>
+                    <div class="card-content">
+                        <div class="simulation-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="simulation-title">Mental Models</h3>
+                        <p class="simulation-description">Understand how users think and create interfaces that match their mental expectations and behaviors.</p>
+                        <div class="simulation-meta">
+                            <span class="difficulty-badge advanced">Advanced</span>
+                            <span class="duration-badge">30 min</span>
+                        </div>
+                        <a href="simulations/mental-models.html" class="btn btn-primary">Start Simulation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="index.html" class="footer-logo">
+                <i class="fas fa-mouse-pointer"></i>
+                <span>Build, Click, Interact</span>
+            </a>
+            <div class="footer-copyright">
+                <p>&copy; 2026 Build, Click, Interact. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
