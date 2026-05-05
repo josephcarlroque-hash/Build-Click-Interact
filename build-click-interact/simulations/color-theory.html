@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Theory in UI Design - Build, Click, Interact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-mouse-pointer"></i>
+                <span>Build, Click, Interact</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../modules.html" class="nav-link">Learn</a></li>
+                <li><a href="../modules.html" class="nav-link active">Simulations</a></li>
+                <li><a href="../quiz.html" class="nav-link">Quiz</a></li>
+                <li><a href="../tools.html" class="nav-link">Tools</a></li>
+                <li><a href="../about.html" class="nav-link">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="simulation-page">
+        <div class="container">
+            <div class="simulation-header">
+                <h1>Color Theory in UI Design</h1>
+                <div class="step-indicator">Step 6 of 8</div>
+            </div>
+
+            <!-- ACTIVITY 1 — Color Emotion Matcher -->
+            <section class="activity-section">
+                <h2><i class="fas fa-palette"></i> Color Emotion Matcher</h2>
+                <p>Drag each color to its matching emotion:</p>
+                
+                <div class="color-emotion-game">
+                    <div class="color-swatches">
+                        <div class="color-card" draggable="true" data-color="red" style="background-color: #ef4444;"></div>
+                        <div class="color-card" draggable="true" data-color="green" style="background-color: #10b981;"></div>
+                        <div class="color-card" draggable="true" data-color="blue" style="background-color: #3b82f6;"></div>
+                        <div class="color-card" draggable="true" data-color="yellow" style="background-color: #eab308;"></div>
+                        <div class="color-card" draggable="true" data-color="orange" style="background-color: #f97316;"></div>
+                        <div class="color-card" draggable="true" data-color="purple" style="background-color: #8b5cf6;"></div>
+                        <div class="color-card" draggable="true" data-color="gray" style="background-color: #6b7280;"></div>
+                        <div class="color-card" draggable="true" data-color="white" style="background-color: #ffffff; border: 2px solid #e5e7eb;"></div>
+                    </div>
+                    
+                    <div class="emotion-zones">
+                        <div class="drop-zone" data-emotion="danger">
+                            <span>Danger / Error</span>
+                        </div>
+                        <div class="drop-zone" data-emotion="success">
+                            <span>Success / Go</span>
+                        </div>
+                        <div class="drop-zone" data-emotion="trust">
+                            <span>Trust / Calm</span>
+                        </div>
+                        <div class="drop-zone" data-emotion="warning">
+                            <span>Warning / Attention</span>
+                        </div>
+                        <div class="drop-zone" data-emotion="energy">
+                            <span>Energy / Action</span>
+                        </div>
+                        <div class="drop-zone" data-emotion="premium">
+                            <span>Premium / Creative</span>
+                        </div>
+                        <div class="drop-zone" data-emotion="neutral">
+                            <span>Neutral / Disabled</span>
+                        </div>
+                        <div class="drop-zone" data-emotion="clean">
+                            <span>Clean / Simple</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="emotion-feedback" class="feedback-message" style="display: none;"></div>
+            </section>
+
+            <!-- ACTIVITY 2 — UI Color Palette Builder -->
+            <section class="activity-section">
+                <h2><i class="fas fa-paint-brush"></i> UI Color Palette Builder</h2>
+                <p>Build your own color palette and see how it affects a real interface:</p>
+                
+                <div class="palette-builder">
+                    <div class="demo-interface">
+                        <nav class="demo-navbar">
+                            <div class="demo-logo">App</div>
+                            <div class="demo-nav-links">
+                                <a href="#">Home</a>
+                                <a href="#">About</a>
+                                <button class="demo-button">Get Started</button>
+                            </div>
+                        </nav>
+                        <div class="demo-content">
+                            <div class="demo-card">
+                                <h3>Welcome</h3>
+                                <p>This is a sample interface that updates with your color choices.</p>
+                                <button class="demo-button-secondary">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="color-controls">
+                        <div class="color-picker-group">
+                            <label for="primary-color">Primary Color:</label>
+                            <input type="color" id="primary-color" value="#3b82f6">
+                        </div>
+                        <div class="color-picker-group">
+                            <label for="background-color">Background Color:</label>
+                            <input type="color" id="background-color" value="#ffffff">
+                        </div>
+                        <div class="color-picker-group">
+                            <label for="text-color">Text Color:</label>
+                            <input type="color" id="text-color" value="#1f2937">
+                        </div>
+                        <div class="color-picker-group">
+                            <label for="accent-color">Accent Color:</label>
+                            <input type="color" id="accent-color" value="#10b981">
+                        </div>
+                    </div>
+                    
+                    <div class="contrast-info">
+                        <div class="contrast-ratio">
+                            <strong>Text Contrast Ratio:</strong> <span id="contrast-value">4.5:1</span>
+                            <span id="contrast-badge" class="badge success">PASS</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ACTIVITY 3 — Color Blindness Simulator -->
+            <section class="activity-section">
+                <h2><i class="fas fa-eye"></i> Color Blindness Simulator</h2>
+                <p>See how your design looks to users with different types of color blindness:</p>
+                
+                <div class="color-blindness-demo">
+                    <div class="sample-ui" id="sample-ui">
+                        <nav class="sample-navbar">
+                            <div class="nav-brand">ColorApp</div>
+                            <div class="nav-menu">
+                                <button class="nav-btn">Home</button>
+                                <button class="nav-btn">Products</button>
+                                <button class="nav-btn active">Services</button>
+                            </div>
+                        </nav>
+                        <div class="sample-content">
+                            <div class="alert alert-error">
+                                <i class="fas fa-exclamation-circle"></i>
+                                Error: Invalid input detected
+                            </div>
+                            <div class="alert alert-success">
+                                <i class="fas fa-check-circle"></i>
+                                Success: Changes saved successfully
+                            </div>
+                            <button class="primary-btn">Submit Form</button>
+                        </div>
+                    </div>
+                    
+                    <div class="vision-buttons">
+                        <button class="vision-btn active" data-filter="none">Normal Vision</button>
+                        <button class="vision-btn" data-filter="protanopia">Protanopia</button>
+                        <button class="vision-btn" data-filter="deuteranopia">Deuteranopia</button>
+                        <button class="vision-btn" data-filter="achromatopsia">Achromatopsia</button>
+                    </div>
+                    
+                    <div class="vision-explanation">
+                        <p id="vision-description">Normal color vision as most people see it.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="navigation-buttons">
+                <a href="navigation.html" class="btn btn-primary" id="next-btn" style="display: none;">Next: Navigation Design</a>
+                <a href="../modules.html" class="btn btn-secondary">Back to Modules</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Build, Click, Interact — An Interactive UX Learning Platform</p>
+            <p>&copy; 2026</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/progress.js"></script>
+    <script>
+        // Color Emotion Matcher Logic
+        const correctMatches = {
+            'red': 'danger',
+            'green': 'success',
+            'blue': 'trust',
+            'yellow': 'warning',
+            'orange': 'energy',
+            'purple': 'premium',
+            'gray': 'neutral',
+            'white': 'clean'
+        };
+
+        let draggedElement = null;
+
+        document.querySelectorAll('.color-card').forEach(card => {
+            card.addEventListener('dragstart', function(e) {
+                draggedElement = this;
+                this.style.opacity = '0.5';
+            });
+
+            card.addEventListener('dragend', function(e) {
+                this.style.opacity = '';
+            });
+        });
+
+        document.querySelectorAll('.drop-zone').forEach(zone => {
+            zone.addEventListener('dragover', function(e) {
+                e.preventDefault();
+                this.classList.add('drag-over');
+            });
+
+            zone.addEventListener('dragleave', function(e) {
+                this.classList.remove('drag-over');
+            });
+
+            zone.addEventListener('drop', function(e) {
+                e.preventDefault();
+                this.classList.remove('drag-over');
+                
+                if (draggedElement) {
+                    const color = draggedElement.dataset.color;
+                    const emotion = this.dataset.emotion;
+                    const feedback = document.getElementById('emotion-feedback');
+                    
+                    if (correctMatches[color] === emotion) {
+                        this.classList.add('correct-drop');
+                        this.innerHTML += '<i class="fas fa-check"></i>';
+                        feedback.textContent = 'Correct! ' + this.querySelector('span').textContent + ' is the right match.';
+                        feedback.className = 'feedback-message success';
+                        draggedElement.style.display = 'none';
+                    } else {
+                        this.classList.add('incorrect-drop');
+                        feedback.textContent = 'Try again! This color has a different meaning.';
+                        feedback.className = 'feedback-message error';
+                        setTimeout(() => {
+                            this.classList.remove('incorrect-drop');
+                        }, 1000);
+                    }
+                    
+                    feedback.style.display = 'block';
+                    setTimeout(() => {
+                        feedback.style.display = 'none';
+                    }, 3000);
+                }
+            });
+        });
+
+        // UI Color Palette Builder Logic
+        const primaryColor = document.getElementById('primary-color');
+        const backgroundColor = document.getElementById('background-color');
+        const textColor = document.getElementById('text-color');
+        const accentColor = document.getElementById('accent-color');
+
+        function updateDemoInterface() {
+            const demoInterface = document.querySelector('.demo-interface');
+            const demoNavbar = demoInterface.querySelector('.demo-navbar');
+            const demoButton = demoInterface.querySelector('.demo-button');
+            const demoButtonSecondary = demoInterface.querySelector('.demo-button-secondary');
+            const demoCard = demoInterface.querySelector('.demo-card');
+            
+            demoNavbar.style.backgroundColor = primaryColor.value;
+            demoButton.style.backgroundColor = accentColor.value;
+            demoButtonSecondary.style.backgroundColor = primaryColor.value;
+            demoInterface.style.backgroundColor = backgroundColor.value;
+            demoCard.style.color = textColor.value;
+            demoCard.style.borderColor = textColor.value;
+            
+            // Update text colors
+            document.querySelectorAll('.demo-navbar a, .demo-logo').forEach(el => {
+                el.style.color = '#ffffff';
+            });
+            
+            // Calculate contrast ratio
+            const rgb1 = hexToRgb(textColor.value);
+            const rgb2 = hexToRgb(backgroundColor.value);
+            const contrast = calculateContrast(rgb1, rgb2);
+            
+            document.getElementById('contrast-value').textContent = contrast.toFixed(2) + ':1';
+            const badge = document.getElementById('contrast-badge');
+            
+            if (contrast >= 4.5) {
+                badge.textContent = 'PASS';
+                badge.className = 'badge success';
+            } else {
+                badge.textContent = 'FAIL';
+                badge.className = 'badge error';
+            }
+        }
+
+        function hexToRgb(hex) {
+            const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+            return result ? {
+                r: parseInt(result[1], 16),
+                g: parseInt(result[2], 16),
+                b: parseInt(result[3], 16)
+            } : null;
+        }
+
+        function calculateContrast(rgb1, rgb2) {
+            const luminance1 = (0.299 * rgb1.r + 0.587 * rgb1.g + 0.114 * rgb1.b) / 255;
+            const luminance2 = (0.299 * rgb2.r + 0.587 * rgb2.g + 0.114 * rgb2.b) / 255;
+            return (Math.max(luminance1, luminance2) + 0.05) / (Math.min(luminance1, luminance2) + 0.05);
+        }
+
+        primaryColor.addEventListener('input', updateDemoInterface);
+        backgroundColor.addEventListener('input', updateDemoInterface);
+        textColor.addEventListener('input', updateDemoInterface);
+        accentColor.addEventListener('input', updateDemoInterface);
+
+        // Color Blindness Simulator Logic
+        const visionButtons = document.querySelectorAll('.vision-btn');
+        const sampleUI = document.getElementById('sample-ui');
+        const visionDescription = document.getElementById('vision-description');
+
+        const visionFilters = {
+            'none': '',
+            'protanopia': 'saturate(0.5) hue-rotate(90deg)',
+            'deuteranopia': 'saturate(0.5) hue-rotate(180deg)',
+            'achromatopsia': 'grayscale(100%)'
+        };
+
+        const visionDescriptions = {
+            'none': 'Normal color vision as most people see it.',
+            'protanopia': 'Protanopia: Difficulty distinguishing red and green colors. Affects about 1% of males.',
+            'deuteranopia': 'Deuteranopia: Difficulty distinguishing green and red colors. Most common form of color blindness.',
+            'achromatopsia': 'Achromatopsia: Complete inability to see color. Only shades of gray are visible.'
+        };
+
+        visionButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                visionButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                const filter = this.dataset.filter;
+                sampleUI.style.filter = visionFilters[filter];
+                visionDescription.textContent = visionDescriptions[filter];
+            });
+        });
+
+        // Check if all activities are completed
+        let activitiesCompleted = {
+            emotionMatcher: false,
+            paletteBuilder: false,
+            colorBlindness: false
+        };
+
+        // Mark activities as completed when user interacts with them
+        document.querySelectorAll('.drop-zone').forEach(zone => {
+            zone.addEventListener('drop', function() {
+                activitiesCompleted.emotionMatcher = true;
+                checkAllActivitiesCompleted();
+            });
+        });
+
+        [primaryColor, backgroundColor, textColor, accentColor].forEach(input => {
+            input.addEventListener('input', function() {
+                activitiesCompleted.paletteBuilder = true;
+                checkAllActivitiesCompleted();
+            });
+        });
+
+        visionButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                activitiesCompleted.colorBlindness = true;
+                checkAllActivitiesCompleted();
+            });
+        });
+
+        function checkAllActivitiesCompleted() {
+            if (activitiesCompleted.emotionMatcher && activitiesCompleted.paletteBuilder && activitiesCompleted.colorBlindness) {
+                localStorage.setItem('module_colortheory_complete', 'true');
+                document.getElementById('next-btn').style.display = 'inline-block';
+            }
+        }
+
+        // Initialize demo interface
+        updateDemoInterface();
+    </script>
+</body>
+</html>

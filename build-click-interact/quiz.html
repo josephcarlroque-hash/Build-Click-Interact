@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Master Quiz - Build, Click, Interact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-laptop-code"></i>
+                <span>BCI</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="modules.html" class="nav-link">Learn</a></li>
+                <li><a href="simulations.html" class="nav-link">Simulations</a></li>
+                <li><a href="quiz.html" class="nav-link active">Quiz</a></li>
+                <li><a href="tools.html" class="nav-link">Tools</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="quiz-page">
+        <div class="container">
+            <div class="quiz-header">
+                <h1>UX Master Quiz</h1>
+                <p class="quiz-subtitle">Test your knowledge across all 8 modules</p>
+            </div>
+
+            <!-- Quiz Container -->
+            <div id="quiz-container">
+                <!-- Progress Bar -->
+                <div class="quiz-progress">
+                    <div class="progress-info">
+                        <span class="question-counter">Question <span id="current-question">1</span> of 20</span>
+                        <span class="timer-display">Time: <span id="time-left">30</span>s</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                    <div class="timer-bar">
+                        <div id="timer-fill" class="timer-fill"></div>
+                    </div>
+                </div>
+
+                <!-- Question Display -->
+                <div id="question-container">
+                    <div class="question-header">
+                        <span class="category-badge" id="category-badge">Usability</span>
+                    </div>
+                    <h2 class="question-text" id="question-text">Loading question...</h2>
+                    <div class="quiz-options" id="quiz-options">
+                        <!-- Options will be dynamically inserted here -->
+                    </div>
+                    <div class="quiz-feedback" id="quiz-feedback" style="display: none;">
+                        <!-- Feedback will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Section (Initially Hidden) -->
+            <div id="results-container" style="display: none;">
+                <div class="results-header">
+                    <h2>Quiz Complete!</h2>
+                    <div class="score-display">
+                        <div class="score-number" id="final-score">0</div>
+                        <div class="score-total">out of 20</div>
+                    </div>
+                    <div class="performance-badge" id="performance-badge">
+                        <i class="fas fa-award"></i>
+                        <span id="badge-text">Keep Practicing!</span>
+                    </div>
+                </div>
+
+                <div class="category-breakdown">
+                    <h3>Performance by Category</h3>
+                    <table class="category-table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Score</th>
+                                <th>Performance</th>
+                            </tr>
+                        </thead>
+                        <tbody id="category-tbody">
+                            <!-- Category scores will be inserted here -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="best-score" id="best-score" style="display: none;">
+                    <p>Best Score: <span id="best-score-value">0</span>/20</p>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-primary" id="retake-quiz">Retake Quiz</button>
+                    <a href="modules.html" class="btn btn-secondary">Back to Modules</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Build, Click, Interact — An Interactive UX Learning Platform</p>
+            <p>&copy; 2026</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/progress.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html>
